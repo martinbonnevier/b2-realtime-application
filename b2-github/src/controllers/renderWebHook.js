@@ -1,14 +1,12 @@
 /**
+ * Function to render the webhook.
  *
- * @param req
- * @param res
- * @param next
+ * @param {object} req - Express request object.
+ * @param {object} res - Express response object.
+ * @param {Function} next - Express next middleware function.
  */
 export function renderWebHook (req, res, next) {
-  console.log('renderWebHook')
   try {
-    console.log(req.body.user.avatar_url)
-    console.log('hatt, n u skickas nåt' + JSON.stringify(req.body.author))
     const data = []
     const date = req.body.object_attributes.created_at.substring(0, 10)
     const time = req.body.object_attributes.created_at.substring(11, 19)

@@ -22,11 +22,8 @@
       <h1 class="display-4">Current title: <%= issue.title %>
       </h1>
 
-
-
       </br>
       <% let action = "/submitNewTitle:"+issue.iid %>
-      <!-- <form method="post" action=<% "/submitNewTitle:" + issue.iid %>> -->
         <form method="post" action="/submitNewTitle">
         <div class="form-group" >
           <label for="title">Enter new title: </label>
@@ -34,17 +31,11 @@
           <input id="issue" type="text" name="id" value="<%= issue.iid %>" style="display: none;">
         </div>
         <div>
-          <!-- <input type="submit" value="Submit"> -->
           <button type="submit" class="btn btn-outline-primary">Update Title</button>
         </div>
 
       </form>
     </br>
-      <!-- <form action="/submitNewTitle" method="post">
-
-        <input type="submit" value="OK">
-    </form> -->
-
 
     <a class="btn btn-outline-primary" href="/" role="button">Cancel (Back to issues)</a>
   </div>

@@ -11,7 +11,7 @@
     <%- include('../partials/flash') %>
   </flash>
 
-  <header>
+  <header class="rounded">
     <%- include('../partials/header'); %>
   </header>
 
@@ -69,19 +69,11 @@
               <%let updateUri = "/updateTitle"+":"+issues[i].iid %>
               <a class="btn btn-warning align-middle customButton" href=<%=closeUri%> role="button" style="vertical-align: middle"><i class="fa-solid fa-xmark"></i></a>
               <a class="btn btn-warning align-middle customButton" href=<%=updateUri%>  role="button" style="vertical-align: middle"><i class="fa-solid fa-bolt"></i></a>
-              <!-- <button type="button" class="btn btn-warning" action=""><i class="fa-solid fa-xmark"></i></button> -->
             </td>
 
           </tr>
           <% } %>
       </table>
-
-     
-
-
-      <div id="testis">
-        <p id="testtext"></p>
-      </div>
 
       </br>
       <a class="btn btn-outline-primary" href="#top" role="button">Back to top</a>
